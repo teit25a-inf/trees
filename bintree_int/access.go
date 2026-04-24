@@ -9,13 +9,11 @@ func (e *Element) SetValue(value int) {
 	// Setzen Sie den Wert des Elements auf den gegebenen Wert.
 	// Prüfen Sie außerdem, ob das Element vorher leer war, z.B. mittels e.IsEmpty().
 
-	// begin:solution
 	e.value = value
 	if e.IsEmpty() {
 		e.left = Empty()
 		e.right = Empty()
 	}
-	// end:solution
 }
 
 // GetValueAt gibt den Wert des Elements zurück, das durch den gegebenen Pfad erreicht wird.
@@ -36,7 +34,6 @@ func (e *Element) GetValueAt(path string) (int, error) {
 	// - Wenn das aktuelle Element leer ist, prüfen Sie, ob der Pfad noch weitere
 	//   Schritte entält. Wenn ja, liefern Sie einen Fehler zurück, andernfalls 0.
 
-	// begin:solution
 	if path == "" {
 		if e.IsEmpty() {
 			return 0, fmt.Errorf("Element is empty")
@@ -54,7 +51,6 @@ func (e *Element) GetValueAt(path string) (int, error) {
 	default:
 		return 0, fmt.Errorf("Invalid path character: %c", path[0])
 	}
-	// end:solution
 }
 
 // InsertValueAt fügt einen neuen Wert in den Baum ein.
@@ -77,7 +73,6 @@ func (e *Element) InsertValueAt(path string, value int) error {
 	// - Wenn das aktuelle Element leer ist, prüfen Sie, ob der Pfad noch weitere
 	//   Schritte entält.
 
-	// begin:solution
 	if path == "" {
 		e.SetValue(value)
 		return nil
@@ -93,5 +88,4 @@ func (e *Element) InsertValueAt(path string, value int) error {
 	default:
 		return fmt.Errorf("Invalid path character: %c", path[0])
 	}
-	// end:solution
 }

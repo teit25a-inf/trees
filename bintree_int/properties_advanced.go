@@ -10,14 +10,12 @@ func (e *Element) IsPerfect() bool {
 	// Dies ist eine mathematische Eigenschaft, die man nutzen kann, um die Perfektheit
 	// zu überprüfen. Ggf. kann auch die Höhe des Baums eine Rolle spielen.
 
-	// begin:solution
 	if e.IsEmpty() {
 		return true
 	}
 	height := e.Height()
 	expectedCount := (1 << height) - 1 // 2^height - 1
 	return e.Count() == expectedCount
-	// end:solution
 }
 
 // IsComplete liefert true zurück, wenn der Baum vollständig ist.
@@ -43,7 +41,6 @@ func (e *Element) IsComplete() bool {
 	// Fahren Sie mit diesem Prozess fort, bis die Liste leer ist oder bis Sie
 	// ein nicht leeres Element finden, nachdem das Flag bereits `true` ist.
 
-	// begin:solution
 	nodes := []*Element{e}
 	foundEmpty := false
 
@@ -62,7 +59,6 @@ func (e *Element) IsComplete() bool {
 	}
 
 	return true
-	// begin:solution
 }
 
 // IsBalanced liefert true zurück, wenn der Baum balanciert ist.
@@ -74,7 +70,6 @@ func (e *Element) IsBalanced() bool {
 	// Berechnen Sie die Höhe der linken und rechten Teilbäume und prüfen Sie, ob sie sich um mehr als 1 unterscheiden.
 	// Wiederholen Sie diesen Prozess rekursiv für alle Elemente im Baum.
 
-	// begin:solution
 	if e.IsEmpty() {
 		return true
 	}
@@ -84,5 +79,4 @@ func (e *Element) IsBalanced() bool {
 		return false
 	}
 	return e.left.IsBalanced() && e.right.IsBalanced()
-	// end:solution
 }
