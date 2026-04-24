@@ -11,16 +11,8 @@ func (e *Element) GetElement(value int) *Element {
 	//
 	// Verwenden Sie die Methoden Value(), Left() und Right(), um auf die Werte und Kinder des Elements zuzugreifen.
 
-	if e.IsEmpty() {
-		return nil
-	}
-	if value == e.Value() {
-		return e
-	} else if value < e.Value() {
-		return e.Left().GetElement(value)
-	} else {
-		return e.Right().GetElement(value)
-	}
+	// TODO
+	return Empty()
 }
 
 // InsertValue fügt einen Wert nach den Regeln eines binären Suchbaums in den Baum ein.
@@ -33,14 +25,5 @@ func (e *Element) InsertValue(value int) {
 	//
 	// Verwenden Sie die Methoden Value(), Left() und Right(), um auf die Werte und Kinder des Elements zuzugreifen.
 
-	if e.IsEmpty() {
-		e.SetValue(value)
-		return
-	}
-
-	if value <= e.Value() {
-		e.Left().InsertValue(value)
-		return
-	}
-	e.Right().InsertValue(value)
+	// TODO
 }

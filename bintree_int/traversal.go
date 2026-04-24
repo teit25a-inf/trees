@@ -11,14 +11,8 @@ func (e *Element) InOrder() []int {
 	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
 	//   Reihenfolge zusammen.
 
-	if e.IsEmpty() {
-		return []int{}
-	}
-	result := []int{}
-	result = append(result, e.left.InOrder()...)
-	result = append(result, e.value)
-	result = append(result, e.right.InOrder()...)
-	return result
+	// TODO
+	return []int{}
 }
 
 // PreOrder liefert die Werte der Elemente in Pre-Order-Reihenfolge zurück.
@@ -32,14 +26,8 @@ func (e *Element) PreOrder() []int {
 	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
 	//   Reihenfolge zusammen.
 
-	if e.IsEmpty() {
-		return []int{}
-	}
-	result := []int{}
-	result = append(result, e.value)
-	result = append(result, e.left.PreOrder()...)
-	result = append(result, e.right.PreOrder()...)
-	return result
+	// TODO
+	return []int{}
 }
 
 // PostOrder liefert die Werte der Elemente in Post-Order-Reihenfolge zurück.
@@ -53,12 +41,6 @@ func (e *Element) PostOrder() []int {
 	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
 	//   Reihenfolge zusammen.
 
-	if e.IsEmpty() {
-		return []int{}
-	}
-	result := []int{}
-	result = append(result, e.left.PostOrder()...)
-	result = append(result, e.right.PostOrder()...)
-	result = append(result, e.value)
-	return result
+	// TODO
+	return []int{}
 }
