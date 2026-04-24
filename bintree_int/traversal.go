@@ -5,12 +5,6 @@ package bintree_int
 // In-Order-Reihenfolge bedeutet, dass zuerst die Werte des linken Teilbaums, dann der
 // Wert der Wurzel und schließlich die Werte des rechten Teilbaums zurückgegeben werden.
 func (e *Element) InOrder() []int {
-	// Hinweis:
-	// - Wenn das aktuelle Element leer ist, geben Sie eine leere Liste zurück.
-	// - Ansonsten rufen Sie `InOrder` rekursiv ür den linken und rechten Teilbaum auf
-	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
-	//   Reihenfolge zusammen.
-
 	// TODO
 	return []int{}
 }
@@ -20,12 +14,6 @@ func (e *Element) InOrder() []int {
 // Pre-Order-Reihenfolge bedeutet, dass zuerst der Wert der Wurzel, dann die Werte
 // des linken Teilbaums und schließlich die Werte des rechten Teilbaums zurückgegeben werden.
 func (e *Element) PreOrder() []int {
-	// Hinweis:
-	// - Wenn das aktuelle Element leer ist, geben Sie eine leere Liste zurück.
-	// - Ansonsten rufen Sie `PreOrder` rekursiv ür den linken und rechten Teilbaum auf
-	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
-	//   Reihenfolge zusammen.
-
 	// TODO
 	return []int{}
 }
@@ -35,12 +23,6 @@ func (e *Element) PreOrder() []int {
 // Post-Order-Reihenfolge bedeutet, dass zuerst die Werte des linken Teilbaums, dann
 // die Werte des rechten Teilbaums und schließlich der Wert der Wurzel zurückgegeben werden.
 func (e *Element) PostOrder() []int {
-	// Hinweis:
-	// - Wenn das aktuelle Element leer ist, geben Sie eine leere Liste zurück.
-	// - Ansonsten rufen Sie `PostOrder` rekursiv ür den linken und rechten Teilbaum auf
-	//   und hängen die Ergebnisse zusammen mit dem Wurzelwert in der passenden
-	//   Reihenfolge zusammen.
-
 	// TODO
 	return []int{}
 }
